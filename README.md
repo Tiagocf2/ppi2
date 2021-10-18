@@ -1,6 +1,6 @@
 ## Projeto de PPI 2
 Instituto Federal de Educação, Ciência e Tecnologia de Brasília  
-Turma TSIV5A
+Tecnólogo em Sistemas para Internet - Turma TSIV5A  
 Programação para Internet 2 - Prof. Fábio Henrique
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&style=plastic&logoColor=white)
