@@ -5,10 +5,8 @@
     <title>Perfil - ExperienceIn</title>
 </head>
 <body>
-    <h1>Detalhes Perfil</h1>
+    <h1>Detalhe Perfil</h1>
     <p>Nome: {{perfil.nome | upper}}</p>
-    <p>Email: {{perfil.email}}</p>
-    <p>Telefone: {{perfil.telefone}}</p>
-    <p>Empresa: {{perfil.nome_empresa}}</p>
+    <a href="{% url 'convidar' perfil.id %}">Convidar</a>
 </body>
 </html>
