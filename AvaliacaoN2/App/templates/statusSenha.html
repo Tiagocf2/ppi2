@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>Status das Senhas</title>
+    </head>
+    <body>
+        <h1>Senhas Na Fila</h1>
+        <hr>
+        {% for senha in senhas %}
+            <h2>{{senha.senha}}</h2>
+            <p>{{senha.hora_data}}</p>
+            <hr>
+        {% endfor %}
+    </body>
+</html>

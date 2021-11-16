@@ -1,0 +1,14 @@
+from App.models import *
+from datetime import datetime
+Tipo.objects.create(nome='Preferencial').save()
+Tipo.objects.create(nome='Não Preferencial').save()
+Categoria.objects.create(nome='Matrícula').save()
+Categoria.objects.create(nome='Rematrícula').save()
+Categoria.objects.create(nome='Diploma').save()
+StatusSenha.objects.create(nome='Na fila').save()
+StatusSenha.objects.create(nome='Em atendimento').save()
+StatusSenha.objects.create(nome='Ausente').save()
+StatusSenha.objects.create(nome='Atendida').save()
+Senha.objects.create(senha=1, hora_data=datetime.now(), id_tipo=Tipo.objects.get(nome='Preferencial'), id_categoria=Categoria.objects.get(nome='Matrícula'),id_status_senha=StatusSenha.objects.get(nome='Na fila')).save()
+Senha.objects.create(senha=2, hora_data=datetime.now(), id_tipo=Tipo.objects.get(nome='Não Preferencial'), id_categoria=Categoria.objects.get(nome='Rematrícula'),id_status_senha=StatusSenha.objects.get(nome='Na fila')).save()
+Senha.objects.create(senha=3, hora_data=datetime.now(), id_tipo=Tipo.objects.get(nome='Não Preferencial'), id_categoria=Categoria.objects.get(nome='Diploma'),id_status_senha=StatusSenha.objects.get(nome='Ausente')).save()
