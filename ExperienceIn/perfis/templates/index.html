@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang='pt-br'>
-    <head>
-        <meta charset='utf-8'>
-        <title>ExperienceIn</title>
-    </head>
-    <body>
-        <h1>Bem-vindo ao ExperienceIn</h1>
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="col-lg-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong>Todos os Perfis</strong>
+        </div>
+
         {% if perfis %}
             <ul>
                 {% for p in perfis %}
@@ -15,5 +17,8 @@
         {% else %}
             <p> Nenhum perfil encontrado </p>   
         {% endif %}
-    </body>
-</html>
+
+    </div>
+</div>
+
+{% endblock %}

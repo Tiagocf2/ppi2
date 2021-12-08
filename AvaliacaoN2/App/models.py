@@ -6,7 +6,7 @@ class Tipo(models.Model):
     nome = models.CharField(max_length=45, null=False)
 
 class StatusSenha(models.Model):
-    id_status = models.AutoField(primary_key=True)
+    id_status_senha = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=45, null=False)
 
 class Categoria(models.Model):
